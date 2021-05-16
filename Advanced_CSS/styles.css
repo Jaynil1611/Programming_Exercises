@@ -1,0 +1,38 @@
+:root {
+    --primary-color:#047857;
+}
+
+.parent {
+    display: flex;
+    /* display: block; */
+    /* align-items: center; */
+    /* height: 800px; */
+    flex-wrap: wrap;
+    
+}
+
+.btn{
+    background-color : var(--primary-color);
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+.child {
+    display: flex;    
+    flex-direction: column;
+    /* justify-content: space-between; */
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid black;
+    max-width: 200px;
+}
+
+.child > p {
+    flex-grow:1;
+}
+
+/* .child + .lower{
+    align-self: flex-end;
+} */

@@ -1,0 +1,122 @@
+
+/* Flex Layout */
+.parent {
+    display: flex;
+    /* display: block; */
+    /* align-items: center; */
+    /* height: 800px; */
+    /* flex-wrap: wrap; */
+    
+}
+
+.child {
+    display: flex;    
+    flex-direction: column;
+    /* justify-content: space-between; */
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid black;
+    
+    /* max-width: 200px; */
+    max-width: 150px;
+}
+
+.child > p {
+    flex-grow:1;
+}
+.child + .lower{
+    /* align-self: flex-end; */
+}
+
+/* Supercript Example */
+.superscript{
+    font-size: 0.5em;
+    position: relative;
+    bottom:1rem;
+}
+
+/* X Example with Image */
+.thumbnail {
+    position: relative;
+}
+
+.remove {
+    position: absolute;
+    top:0px;
+    right: 0px;
+}
+
+/* Snackbar Example */
+.snackbar {
+    position: fixed;
+    bottom: 1rem;
+    left:1rem;
+
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+/* Modal H/W */
+#modal {
+    display: none;
+    width: 100%;
+    position: fixed;
+    z-index:1;
+    top:0;
+    left:0;
+    height:100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {  
+    position: relative;  
+    background-color: wheat;
+    width: 80%; 
+    margin: auto;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid red;
+}
+
+#close-modal{
+    position: absolute;
+    right:0;
+    top:0;
+}
+
+/* Floating Action Button H/W */
+.floating-btn{
+    position: relative;
+    font-size: 2rem;
+    width:3rem;
+    height: 3rem;
+    color: white;
+    box-sizing: border-box;
+    border-radius: 100%;
+    background-color: #1976d2;
+    border: 1px solid #1976d2;
+    outline-style: none;
+    box-shadow: 0px 3px 5px -1px rgb(0 0 0 / 20%), 0px 6px 10px 0px rgb(0 0 0 / 14%), 0px 1px 18px 0px rgb(0 0 0 / 12%);
+}
+
+.floating-btn:hover{
+    background-color: rgb(17, 82, 147);
+    transition: 0.2s;
+}
+
+/* Badge H/W */
+.badge{
+    position: absolute;
+    left:0;
+    top:1rem;
+    padding: 0rem 0.5rem;
+    background-color: #DB2777;
+}
+
+/* Text Overlay */
+.text{
+    position: absolute;
+    bottom:0;
+    left:0;
+}

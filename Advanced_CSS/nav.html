@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <ul class="list-style">
+            <li class="list-item"><a href="#"> Home </a></li>
+            <li class="list-item"><a href="#"> Work </a></li>
+            <li class="list-item"><a href="#"> Projects </a></li>
+            <li class="list-item"><a href="#"> Open Source </a></li>
+            <li class="list-item"><a href="#"> Contact </a></li>
+            <li class="toggle"><a tabindex="0" href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+    </nav>
+    <script>
+        const toggle = document.querySelector(".toggle");
+        const navList = document.querySelector(".list-style");
+        const toggleBar = () => {
+            if (navList.classList.contains("active")) {
+                navList.classList.remove("active");
+                toggle.querySelector("a").innerHTML = `<i class="fas fa-bars"></i>`;
+            } else {
+                toggle.querySelector("a").innerHTML = `<i class="fas fa-times"></i>`;
+                navList.classList.add("active")
+            }
+        }
+        toggle.addEventListener('click', toggleBar, false);
+    </script>
+</body>
+
+</html>

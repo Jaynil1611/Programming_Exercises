@@ -1,0 +1,20 @@
+.grid-row{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    /* grid-column-gap: 1rem; */
+    border: 1px solid black;
+}
+
+.grid-col {
+    display: flex;
+    border: 1px solid black;
+    flex-direction: column;    
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.heading {
+    display: grid;
+    text-align: center;
+    grid-column: 1/3;    
+}

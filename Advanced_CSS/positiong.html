@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="postioning.css">
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child">
+            <h1> One heading</h1>
+            <div class="thumbnail">
+                <img src="https://via.placeholder.com/150" />
+                <button class="remove">
+                    x
+                </button>
+                <span class="badge"> NEW </span>
+                <p class="text"> This is text overlay on image. </p>
+            </div>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                laoreet
+                dolore magna aliquam erat volutpat.
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                laoreet
+                dolore magna aliquam erat volutpat.
+                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
+                ex ea
+                commodo consequat.
+                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
+                ex ea
+                commodo consequat.
+            </p>
+            <button> Primary Button </button>
+        </div>
+    </div>
+    <hr />
+    <h1> Modal H/W </h1>
+    <div class="parent">
+        <button id="modal-loader">
+            Open Modal
+        </button>
+    </div>
+    <div id="modal">
+        <div class="modal-content">
+            <p> Hi I am a Modal </p>
+            <button id="close-modal"> X </button>
+        </div>
+    </div>
+    <hr />
+    <h1>Floating Action Button </h1>
+    <div>
+        <button class="floating-btn"> + </button>
+    </div>
+    <hr />
+    <!-- <div>
+        <h1> Positioning </h1>
+        <h1>
+            This is a heading
+            <span class="superscript"> superscript</span>
+        </h1>
+        <div class="snackbar">
+            You got a new email. This is a notification
+        </div>
+    </div> -->
+    <script>
+        var modalBtn = document.querySelector("#modal-loader");
+        var modalDiv = document.querySelector("#modal");
+        var closeBtn = document.querySelector("#close-modal");
+        modalBtn.addEventListener('click', () => {
+            modalDiv.style.display = "block";
+        });
+        closeBtn.addEventListener('click', () => {
+            modalDiv.style.display = "none";
+        });
+    </script>
+
+</body>
+
+</html>
